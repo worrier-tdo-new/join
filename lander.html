@@ -9,22 +9,35 @@
  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- ===== Nav ===== -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="../index.html" class="logo"><img src="../assets/img/logo.svg" alt=""><span>EduSphere</span></a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
-        <span class="bar" aria-hidden="true"></span> Menu
-      </button>
-      <nav class="menu" id="primaryMenu" aria-label="Primary">
-        <a href="courses.html">Courses</a>
-        <a href="live-classes.html">Live Classes</a>
-        <a href="exams.html">Exams</a>
-        <a href="results.html">Results</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html" class="active">About</a>
-        <button class="btn ghost" id="moreNavBtn" type="button">More</button>
-      </nav>
+  <style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: url("https://raw.githubusercontent.com/neo-aussie/img/refs/heads/main/whale%20lap.png") no-repeat center center;
+    background-size: cover;
+  }
+ 
+  /* Mobile (max 600px) */
+  @media (max-width: 600px) {
+    body {
+      background-image: url("https://raw.githubusercontent.com/neo-aussie/img/refs/heads/main/whale%20mobile.png");
+    }
+  }
+ 
+  /* Tablet (601px – 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      background-image: url("https://raw.githubusercontent.com/neo-aussie/img/refs/heads/main/whale%20lap.png");
+    }
+  }
+ 
+  /* Desktop (above 1024px) */
+  @media (min-width: 1025px) {
+    body {
+      background-image: url("https://raw.githubusercontent.com/neo-aussie/img/refs/heads/main/whale%20lap.png");
+    }
+  }
+</style>
       <div class="right">
         <a class="btn ghost" href="login.html">Sign In</a>
         <a class="btn" href="signup.html">Get Started</a>
