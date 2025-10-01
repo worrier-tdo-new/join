@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms & Conditions | EduSphere</title>
+  <meta name="description" content="Terms and Conditions of EduSphere. Understand the rules and guidelines for using our platform." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="EduSphere Home">
+        <img src="assets/img/logo.svg" alt="EduSphere Logo" />
+        <span>EduSphere</span>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="pages/courses.html">Courses</a>
+        <a href="pages/live-classes.html">Live Classes</a>
+        <a href="pages/exams.html">Exams</a>
+        <a href="pages/results.html">Results</a>
+        <a href="pages/blog.html">Blog</a>
+        <button class="btn ghost" id="moreNavBtn" type="button">More</button>
+      </nav>
+
+      <div class="right">
+        <a class="btn ghost" href="pages/login.html">Sign In</a>
+        <a class="btn" href="pages/signup.html">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Terms & Conditions</h1>
+      <p>Last Updated: 30 Sep 2025</p>
+    </div>
+  </section>
+
+  <!-- ===== Terms Content ===== -->
+  <main class="section container">
+    <article class="card">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using EduSphere, you agree to these Terms & Conditions and our Privacy Policy. If you do not agree, you may not use the platform.</p>
+
+      <h2>2. Eligibility</h2>
+      <p>You must be at least 13 years old to use EduSphere. If under 18, you confirm that you have parental or guardian consent.</p>
+
+      <h2>3. Accounts & Security</h2>
+      <p>You are responsible for maintaining the confidentiality of your login details. Any activity under your account is your responsibility.</p>
+
+      <h2>4. Use of Services</h2>
+      <p>EduSphere is for personal learning purposes only. Do not misuse the platform by uploading harmful content, attempting hacks, or violating laws.</p>
+
+      <h2>5. Payments & Refunds</h2>
+      <p>Fees for courses and services must be paid as per the pricing page. Refunds are subject to EduSphere’s refund policy, available at the time of purchase.</p>
+
+      <h2>6. Intellectual Property</h2>
+      <p>All course materials, logos, and content are the property of EduSphere. You may not copy, redistribute, or modify without permission.</p>
+
+      <h2>7. Third-Party Services</h2>
+      <p>EduSphere may link to third-party sites. We are not responsible for their content, services, or policies.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>EduSphere is not liable for indirect or incidental damages arising from use of our services. Learning outcomes depend on individual effort.</p>
+
+      <h2>9. Termination</h2>
+      <p>We reserve the right to suspend or terminate your access if you violate these terms or misuse the platform.</p>
+
+      <h2>10. Governing Law</h2>
+      <p>These Terms are governed by applicable laws in your jurisdiction. Disputes will be resolved in competent courts of that region.</p>
+
+      <h2>11. Contact</h2>
+      <p>For queries regarding these Terms, contact us at <a href="mailto:support@edusphere.com">support@edusphere.com</a>.</p>
+    </article>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h4>EduSphere</h4>
+          <p class="blog-card meta">Please read our Terms carefully before using EduSphere. Your continued use means acceptance.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p class="blog-card meta">
+            <a href="privacy.html">Privacy</a> •
+            <a href="terms.html" class="active">Terms</a> •
+            <a href="sitemap.html">Sitemap</a>
+          </p>
+        </div>
+      </div>
+      <p class="blog-card meta">© 2025 EduSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== More Nav Modal ===== -->
+  <div class="modal-backdrop" id="moreNavModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <h3>More Pages</h3>
+      <div class="grid-2" style="margin-top:12px">
+        <div>
+          <ul>
+            <li><a href="pages/scholarships.html">Scholarships</a></li>
+            <li><a href="pages/resources.html">Resources</a></li>
+            <li><a href="pages/admissions.html">Admissions</a></li>
+            <li><a href="pages/fees.html">Fees & Financing</a></li>
+            <li><a href="pages/placements.html">Placements</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="pages/alumni.html">Alumni</a></li>
+            <li><a href="pages/events.html">Events / Webinars</a></li>
+            <li><a href="pages/careers.html">Careers</a></li>
+            <li><a href="pages/support.html">Support</a></li>
+            <li><a href="pages/prospectus.html">Download Prospectus</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:16px; display:flex; gap:8px; justify-content:flex-end">
+        <button class="btn ghost" id="closeMoreNav">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Minimal JS for modal ===== -->
+  <script>
+    (function () {
+      const openBtn = document.getElementById('moreNavBtn');
+      const modal = document.getElementById('moreNavModal');
+      const closeBtn = document.getElementById('closeMoreNav');
+
+      if (!openBtn || !modal) return;
+
+      const open = () => { modal.style.display = 'flex'; modal.setAttribute('aria-hidden', 'false'); };
+      const close = () => { modal.style.display = 'none'; modal.setAttribute('aria-hidden', 'true'); };
+
+      openBtn.addEventListener('click', open);
+      closeBtn && closeBtn.addEventListener('click', close);
+      modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+      close();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sitemap | EduSphere</title>
+  <meta name="description" content="Sitemap of EduSphere — quick access to all pages and resources." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt=""><span>EduSphere</span></a>
+      <nav class="menu"><a href="pages/courses.html">Courses</a><a href="pages/live-classes.html">Live Classes</a><a href="pages/exams.html">Exams</a><a href="pages/results.html">Results</a><a href="pages/blog.html">Blog</a><button class="btn ghost" id="moreNavBtn">More</button></nav>
+      <div class="right"><a class="btn ghost" href="pages/login.html">Sign In</a><a class="btn" href="pages/signup.html">Get Started</a></div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Sitemap</h1>
+      <p>All pages of EduSphere in one place for quick navigation.</p>
+    </div>
+  </section>
+
+  <!-- ===== Sitemap Content ===== -->
+  <main class="section container">
+    <div class="grid-2">
+      <div class="card">
+        <h2>Main Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/courses.html">Courses</a></li>
+          <li><a href="pages/live-classes.html">Live Classes</a></li>
+          <li><a href="pages/exams.html">Exams</a></li>
+          <li><a href="pages/results.html">Results</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="posts/sample-post.html">Sample Blog Post</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Policy & Info</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="sitemap.html" class="active">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Student Support</h2>
+        <ul>
+          <li><a href="pages/scholarships.html">Scholarships</a></li>
+          <li><a href="pages/resources.html">Resources</a></li>
+          <li><a href="pages/admissions.html">Admissions</a></li>
+          <li><a href="pages/fees.html">Fees & Financing</a></li>
+          <li><a href="pages/placements.html">Placements</a></li>
+          <li><a href="pages/support.html">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Community & Careers</h2>
+        <ul>
+          <li><a href="pages/alumni.html">Alumni</a></li>
+          <li><a href="pages/events.html">Events / Webinars</a></li>
+          <li><a href="pages/careers.html">Careers</a></li>
+          <li><a href="pages/prospectus.html">Download Prospectus</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== CTA ===== -->
+  <section class="section container">
+    <div class="cta">
+      <h2>Can’t Find What You’re Looking For?</h2>
+      <p>Reach out to our support team and we’ll help you navigate.</p>
+      <a href="pages/support.html" class="btn">Go to Support</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="blog-card meta">© 2025 EduSphere. All rights reserved.</p>
+      <p class="blog-card meta"><a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a> • <a href="sitemap.html" class="active">Sitemap</a></p>
+    </div>
+  </footer>
+
+  <!-- ===== More Nav Modal ===== -->
+  <div class="modal-backdrop" id="moreNavModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <h3>More Pages</h3>
+      <div class="grid-2" style="margin-top:12px">
+        <div>
+          <ul>
+            <li><a href="pages/scholarships.html">Scholarships</a></li>
+            <li><a href="pages/resources.html">Resources</a></li>
+            <li><a href="pages/admissions.html">Admissions</a></li>
+            <li><a href="pages/fees.html">Fees & Financing</a></li>
+            <li><a href="pages/placements.html">Placements</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="pages/alumni.html">Alumni</a></li>
+            <li><a href="pages/events.html">Events / Webinars</a></li>
+            <li><a href="pages/careers.html">Careers</a></li>
+            <li><a href="pages/support.html">Support</a></li>
+            <li><a href="pages/prospectus.html">Download Prospectus</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:16px; display:flex; gap:8px; justify-content:flex-end"><button class="btn ghost" id="closeMoreNav">Close</button></div>
+    </div>
+  </div>
+
+  <!-- ===== Minimal JS for modal ===== -->
+  <script>
+    (function(){
+      const openBtn=document.getElementById('moreNavBtn'),modal=document.getElementById('moreNavModal'),closeBtn=document.getElementById('closeMoreNav');
+      if(!openBtn||!modal)return;
+      const open=()=>{modal.style.display='flex';modal.setAttribute('aria-hidden','false')};
+      const close=()=>{modal.style.display='none';modal.setAttribute('aria-hidden','true')};
+      openBtn.addEventListener('click',open);
+      closeBtn&&closeBtn.addEventListener('click',close);
+      modal.addEventListener('click',e=>{if(e.target===modal)close()});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+      close();
+    })();
+  </script>
+</body>
+</html>

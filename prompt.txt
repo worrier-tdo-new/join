@@ -1,0 +1,37 @@
+I want you to generate a complete website project.  
+Website name: { "Your Website Name" }  
+Website description: { "Your Website Description" }  
+
+🔹 Requirements:  
+1. Use a clean and reusable **folder structure**:  
+   PROJECT_NAME/  
+   ├── assets/  
+   │   ├── css/ (all stylesheets)  
+   │   ├── js/ (all scripts)  
+   │   ├── img/ (images, icons, logo, favicon)  
+   │   └── fonts/ (optional, custom fonts)  
+   ├── pages/ (about, services, contact, faq, etc.)  
+   ├── posts/ (if blog/articles are needed)  
+   ├── index.html (homepage)  
+   ├── privacy.html  
+   ├── terms.html  
+   ├── sitemap.html  
+   ├── robots.txt  
+   └── README.md  
+
+2. Each HTML file should include:  
+   - Proper `<head>` (meta title, description, favicon, responsive tag).  
+   - A **nav bar placeholder** (you won’t add full nav by default, just a placeholder section).  
+   - Footer with copyright + year.  
+   - Minimal semantic structure (`<header>`, `<main>`, `<footer>`).  
+
+3. Make sure to:  
+   - Keep the design responsive (mobile-first).  
+   - Link CSS/JS from the `assets` folder.  
+   - Use generic text/content that can be replaced later.  
+
+🔹 Important Instructions:  
+- When I ask for a specific file (e.g., *“give me index.html”*), you will generate **only that file’s code**.  
+- When I say *“add navbar”* or *“add section”*, you will update/extend the requested file’s code accordingly.  
+- Keep code clean, commented, and ready to expand.  
+
